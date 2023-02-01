@@ -2,15 +2,14 @@
 /**
  * Testimonial Block Template.
  */
-$text = get_field('testimonial') ?: 'Testimonials';
-$info = get_field('sub_text') ?: 'Excepteur sint occaecat cupidatat non proident';
+$title = get_field('title') ?: 'Testimonials';
+$text = get_field('text') ?: 'Excepteur sint occaecat cupidatat non proident';
 
 ?>
 <div class="reviews container">
     <div class="title">
-        <h1><?= $text ?>
-            <h1>
-                <p><?= $info ?></p>
+        <h1><?= $title ?></h1>
+        <p><?= $text ?></p>
     </div>
     <div class="content-reviews">
         <!-- Swiper -->
