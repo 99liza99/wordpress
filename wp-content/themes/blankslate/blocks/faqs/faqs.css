@@ -1,0 +1,113 @@
+
+body .faqs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body .faqs .list {
+    display: block;
+}
+
+body .faqs .list {
+    width: 40%;
+}
+
+body .faqs .list .faqs-title h2 {
+    font-size: 30px;
+}
+
+body .faqs .list .faqs-title p {
+    color: #808080;
+}
+
+body .faqs .list .items .item {
+    width: 100%;
+    background: linear-gradient(90deg, #ff6800 0%, #ff1f00 100%);
+    border-radius: 25px;
+    color: white;
+    margin-bottom: 20px;
+    transition: 0.5s;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body .faqs .list .items .item .tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body .faqs .list .items .item .tab img {
+    cursor: pointer;
+    z-index: 98;
+    width: 25px;
+    height: 25px;
+}
+
+body .faqs .list .items .item .tab img.close {
+    display: none;
+}
+
+body .faqs .list .items .item .faq-content {
+    visibility: hidden;
+    transition: visibility 0.5s, max-height 0.5s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+body .faqs .list .items .item.active {
+    background: white;
+    color: black;
+    border: 1px solid #e75624;
+}
+
+body .faqs .list .items .item.active .tab img.open {
+    display: none;
+}
+
+body .faqs .list .items .item.active .tab img.close {
+    display: block;
+}
+
+body .faqs .list .items .item.active .faq-content {
+    color: #808080;
+    visibility: visible;
+    max-height: 100px;
+}
+
+body .faqs .image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+body .faqs .image img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    body .faqs {
+        display: block;
+    }
+
+    body .faqs .list {
+        width: 100%;
+    }
+
+    body .faqs .list .items .item.active .faq-content {
+        max-height: 140px;
+        font-size: 14px;
+    }
+
+    body .faqs .image {
+        width: 100%;
+    }
+
+    body .faqs .image img {
+        max-width: 400px;
+    }
+}

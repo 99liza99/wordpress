@@ -1,0 +1,41 @@
+body .reviews .title {
+    margin-bottom: 45px;
+}
+body .reviews .title h1 {
+    font-size: 30px;
+    text-align: center;
+}
+body .reviews .title p {
+    font-size: 15px;
+    text-align: center;
+    color: #808080;
+}
+body .reviews .content-reviews {
+    margin-bottom: 50px;
+}
+body .reviews .content-reviews .swiper-slide {
+    border: 2px solid #e75624;
+    border-radius: 25px;
+}
+body .reviews .content-reviews .swiper-slide .card {
+    padding: 20px;
+}
+body .reviews .content-reviews .swiper-slide .card .description {
+    color: #808080;
+    text-align: center;
+    line-height: 24px;
+}
+body .reviews .content-reviews .swiper-slide .card .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+body .reviews .content-reviews .swiper-slide .card .contact .icon img {
+    width: 50px;
+}
+body .reviews .content-reviews .swiper-slide .card .contact .info p {
+    color: #808080;
+}
+body .reviews .content-reviews .swiper-pagination {
+    margin-top: 25px;
+}

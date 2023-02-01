@@ -1,0 +1,14 @@
+{
+  "name": "acf/contacts",
+  "title": "Contacts",
+  "description": "A custom contacts block.",
+  "style": [ "file:./contacts.css" ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["contact"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "contacts.php"
+  },
+  "align": "full"
+}

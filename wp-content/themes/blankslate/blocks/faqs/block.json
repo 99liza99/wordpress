@@ -1,0 +1,14 @@
+{
+  "name": "acf/faqs",
+  "title": "Faqs",
+  "description": "A custom faqs block.",
+  "style": [ "file:./faqs.css" ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["faqs"],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "faqs.php"
+  },
+  "align": "full"
+}

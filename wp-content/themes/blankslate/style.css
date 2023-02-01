@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body header {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+}
+body .container {
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+}
+body .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+body .navigation .logo {
+    display: flex;
+}
+body .navigation .logo .burger {
+    align-items: center;
+    display: none;
+    width: 25px;
+    justify-content: center;
+}
+body .navigation .menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body .navigation .menu ul li {
+    list-style-type: none;
+    margin-right: 30px;
+    font-weight: bold;
+}
+body .navigation .menu ul li a {
+    color: #e75624;
+    text-decoration: none;
+    font-size: 15px;
+}
+body .navigation .menu ul li a:hover {
+    border-bottom: 2px solid #e75624;
+}
+body .navigation .menu ul .phone {
+    background-color: #e75624;
+    border-radius: 25px;
+}
+body .navigation .menu ul .phone a {
+    display: block;
+    padding: 10px 15px;
+    margin: auto;
+}
+body .navigation .menu ul .phone a span {
+    color: white;
+    font-weight: bold;
+}
+body .navigation .menu ul .phone a img {
+    margin-right: 5px;
+}
+body #black-background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 98;
+    background-color: rgba(0, 0, 0, 0.59);
+    display: none;
+}
+body #black-background.active {
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+    body .container {
+        margin: 10px;
+    }
+    body .navigation .logo a img {
+        height: 50px;
+    }
+    body .navigation .menu ul li {
+        margin-right: 10px;
+    }
+    body .navigation .menu ul li a {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body .head-menu {
+        margin: 0;
+    }
+    body .navigation .logo {
+        margin-left: 10px;
+    }
+    body .navigation .logo .burger {
+        cursor: pointer;
+        display: flex;
+        margin-right: 15px;
+    }
+    body .navigation .logo .burger #close-menu {
+        display: none;
+    }
+    body .navigation .menu {
+        visibility: hidden;
+        transition: visibility 0.5s, max-height 0.5s;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        background: #fee8ce;
+        width: 100%;
+        top: 56px;
+        z-index: 999;
+    }
+    body .navigation .menu ul {
+        display: block;
+        padding-left: 20px;
+    }
+    body .navigation .menu ul li {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    body .navigation .menu ul li.phone {
+        width: 150px;
+    }
+    body .navigation.active .logo .burger #close-menu {
+        display: block;
+    }
+    body .navigation.active .logo .burger #open-menu {
+        display: none;
+    }
+    body .navigation.active .menu {
+        visibility: visible;
+        max-height: 500px;
+    }
+
+}/*# sourceMappingURL=main.css.map */
