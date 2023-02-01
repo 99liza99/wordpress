@@ -1,5 +1,4 @@
-
-body .faqs {
+body .container.faqs {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +89,7 @@ body .faqs .image img {
 }
 
 @media only screen and (max-width: 768px) {
-    body .faqs {
+    body .container.faqs {
         display: block;
     }
 

@@ -14,8 +14,8 @@
             <div class="item" id="item-1">
                 <div class="tab">
                     <span>Sed ut perspiciatis unde omnis iste natus ?</span>
-                    <img src="/media/plus.svg" alt="expand" class="open" id="1" />
-                    <img src="/media/minus.svg" alt="expand" class="close" id="1" />
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/plus.svg')?>" alt="expand" class="open" id="1" />
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/minus.svg')?>" alt="expand" class="close" id="1" />
                 </div>
                 <div class="faq-content">
                     <p>
@@ -27,8 +27,8 @@
             <div class="item" id="item-2">
                 <div class="tab">
                     <span>Sed ut perspiciatis unde omnis iste natus ?</span>
-                    <img src="/media/plus.svg" alt="expand" class="open" id="2" />
-                    <img src="/media/minus.svg" alt="expand" class="close" id="2" />
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/plus.svg')?>" alt="expand" class="open" id="2" />
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/minus.svg')?>" alt="expand" class="close" id="2" />
                 </div>
                 <div class="faq-content">
                     <p>
@@ -40,8 +40,8 @@
             <div class="item" id="item-3">
                 <div class="tab">
                     <span>Sed ut perspiciatis unde omnis iste natus ?</span>
-                    <img src="/media/plus.svg" alt="expand" class="open" id="3" />
-                    <img src="/media/minus.svg" alt="expand" class="close" id="3" />
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/plus.svg')?>" alt="expand" class="open" id="3" />
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/minus.svg')?>" alt="expand" class="close" id="3" />
                 </div>
                 <div class="faq-content">
                     <p>
@@ -53,6 +53,6 @@
         </div>
     </div>
     <div class="image">
-        <img src="/media/Image.png" alt="FAQS iamge" />
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/Image.png')?>" alt="FAQS iamge" />
     </div>
 </div>

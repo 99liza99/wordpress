@@ -6,7 +6,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 body header {
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -48,7 +48,7 @@ body .navigation .menu ul li a {
     text-decoration: none;
     font-size: 15px;
 }
-body .navigation .menu ul li a:hover {
+body .navigation .menu ul li:not(.phone) a:hover {
     border-bottom: 2px solid #e75624;
 }
 body .navigation .menu ul .phone {
